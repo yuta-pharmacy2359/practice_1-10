@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "メイリオ";
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #ff9a4b;
+  position: relative;
+}
+
+.co-logo {
+  padding-left: 20px;
+  line-height: 50px;
+}
+
+.co-logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.icons {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.fab {
+  font-size: 20px;
+  color: white;
+  margin-left: 10px;
+}
+
+.title {
+  width: 1290px;
+  margin: 50px auto 0 auto;
+}
+
+.steps {
+  margin: 20px auto 50px auto;
+  width: 1290px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.step {
+  width: 300px;
+  padding: 10px;
+  background-color: #eeeeee;
+  margin-right: 30px;
+  position: relative;
+}
+
+.step:last-child {
+  margin-right: 0;
+}
+
+.step-number {
+  color: #fff;
+  background-color: #ff9a4b;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.step-image {
+  height: 150px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.image1 {
+  background-image: url(img/flow01.png);
+}
+
+.image2 {
+  background-image: url(img/flow02.png);
+}
+
+.image3 {
+  background-image: url(img/flow03.png);
+}
+
+.image4 {
+  background-image: url(img/flow04.png);
+}
+
+.step-title {
+  margin: 15px 0 5px 0;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #aaaaaa;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  line-height: 50px;
+}
+
+@media screen and (max-width: 1350px) {
+  .title {
+    width: 630px;
+  }
+
+  .steps {
+    width: 630px;
+  }
+
+  .step:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .step:nth-child(-n + 2) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    width: 420px;
+  }
+
+  .steps {
+    width: 420px;
+  }
+
+  .step {
+    width: 200px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .icons {
+    display: none;
+  }
+
+  .title {
+    width: 90%;
+  }
+
+  .steps {
+    display: block;
+    width: 90%;
+  }
+
+  .step {
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 20px 0;
+  }
+
+  .step:last-child {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  footer p {
+    font-size: 10px;
+  }
+}
